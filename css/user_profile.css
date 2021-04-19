@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  
+
+
+*,html,body{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+}
+
+
+:root{
+    --gold: #e09f3e;
+    
+}
+
+::placeholder{
+    color: #cccccc;
+    font-family: 'Lato',sans-serif ;
+
+}
+.backdrop-blur {
+    color: rgb(100, 98, 98)  !important;
+    background: rgba(190,190,190,.7);
+}
+  
+  /* if backdrop support: very transparent and blurred */
+  @supports ((-webkit-backdrop-filter: blur(81.5485px)) or (backdrop-filter: blur(81.5485px))) {
+    .backdrop-blur {
+        background :linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+        -webkit-backdrop-filter: blur(81.5485px);
+      backdrop-filter: blur(81.5485px);
+      
+    }
+  }
+
+.slider-controls img{
+    margin-left: 15px;
+}
+
+.user-profile-container{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/user_profile_background.png) top/cover;
+    height:100%;
+    width: 100%; 
+    padding:  0 50px 80px 50px;
+    
+}
+
+.user-profile-container > nav{
+    background: transparent;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.user-profile-container a{
+    font-size: 16px;
+    color: white;
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+}
+
+.user-profile-container>nav>.icon{
+    color: #E09F3E;
+    display: none;
+    float: right;
+    margin-right: 15px;
+   
+}  
+
+.user-profile-container >nav>.nav-links >a>button{
+    background: #E09F3E;
+    margin-left: 30px;
+    width: 192px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-family: 'Lato',sans-serif;
+    border: none;
+}
+
+
+.user-profile-container >nav>.nav-links >a>button:focus{
+    outline: none;
+}
+
+.user-profile-and-edit-section{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(568px,1fr));
+    gap: 80px;
+   
+     
+}
+
+.user-profile-card-container{
+    height: 411px;
+    
+    border: 1px solid #EEEEEE;
+    border-radius: 4px; 
+    margin-top: 35px;
+}
+
+.user-profile-card-cover{
+   background: url(../images/user_profile_cover.jpg)  right/cover no-repeat;
+   height: 70%;
+   border-radius:  4px 4px 0px 0px;   
+
+}
+.user-profile-card-info{
+    background-color: grey;
+    height: 30%;
+    border-radius:  0px 0px 4px 4px;  
+    display: flex; 
+    padding: 0 20px;
+}
+
+.user-profile-pic{
+    background: url(../images/user_profile_pic.jpg) center/cover no-repeat;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+    height: 144px;
+    width: 144px;
+    margin-top: -50px;
+}
+.user-details{
+    margin-top: 20px;
+    color: white;
+    margin-left: 25px;
+}
+.user-details h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.user-details p{
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+}
+
+.user-profile-container >nav>.nav-links >button:focus{
+    outline: none;
+}
+
+
+.edit-profile-card-wrapper{
+  display: flex;
+  flex-direction: column;
+ 
+
+  
+}
+.edit-profile-sub{
+    
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.edit-profile-card{
+    height: 411px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    display: flex;
+    padding: 30px 40px;
+}
+.edit-profile-card >form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    width: 100%;
+   
+}
+
+.edit-profile-card >form >label{
+    color: white;
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+   
+    margin-bottom: 20px;
+}
+
+.edit-profile-card >form >input{
+    outline: none;
+    font-family: 'Lato',sans-serif;
+    color: #cccccc;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+
+.edit-profile-card >form >button{
+    background: #E09F3E;
+    
+    width: 178px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none!important;
+    border: none;
+    font-family: 'Lato',sans-serif;
+    color: white;
+    font-size: 18px;
+}
+.edit-profile-card >form >button{
+    outline: none;
+}
+.user-info-form{
+    margin-right: 30px;
+}
+.user-info-form>input{
+    margin-bottom: 10px;
+}
+
+.user-interest-form>input{
+    margin-bottom: 47px;
+
+}
+.user-info-form>button{
+   margin-top: 10px;
+}
+.user-interest-form>button{
+    margin-top: -30px;
+}
+.heading-and-controls{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.heading-and-controls h1{
+    font-family: 'Roboto',sans-serif;
+    color: #ffffff;
+   font-size: 24px;
+   font-weight: normal;
+}
+
+.slick-carousel {
+    margin: 0 -10px;
+  }
+
+.card{
+    height: 320px;
+    border: 1px solid #EEEEEE;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+.card img {
+    width: 100%;
+  }
+  .card-photo{
+      position: relative;
+  }
+  .mountain-expert-tag{
+ 
+    width: 150px !important; 
+    position: absolute;
+    left:-9px;
+    bottom: -30px;
+  }
+.card>.card-description{
+   padding: 20px 10px;
+}
+.card >.card-description >h1{
+  color: #FFFFFF;
+  margin: 8px 0;
+  font-weight: 700;
+  font-family: 'Roboto',sans-serif;
+  font-size: 19px;
+}
+
+.card >.card-description >p{
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 8px 0;
+  font-family: 'Lato',sans-serif;
+}
+
+.card >.card-description>.additional-desc{
+  display: flex;
+  color: #cccccc;
+  font-size: 14px;
+  font-family: 'Lato',sans-serif;
+  display: flex;
+  margin: 8px 0;
+
+  }
+ .card >.card-description>.additional-desc>.length{
+     margin-right: 15px;
+ } 
+  .prev,.next{
+      cursor: pointer;
+  }
+	.rating-level {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		font-family: 'Lato',sans-serif;
+		font-size: 13px;
+		justify-content: space-between;
+		color: #ffffff;
+		padding-top: 15%;
+	}
+  .stars{
+      display: flex;
+  }
+  .stars img{
+      width: 15px;
+  }
+
+  .rating-level .intermediate-tag{
+      background:  #F66262;
+      width: 80px;
+      padding: 3px;
+      border-radius: 2px;
+     
+  }
+  .rating-level .difficult-tag{
+    background:#4A4848;
+    width: 52px;
+    padding: 3px;
+    border-radius: 2px;
+  }
+.slick-initialized .slick-slide {
+    display: block;
+    outline: none;
+}
+
+
+
+@media only screen and (max-width:1200px){
+.card {
+	height: auto;
+}
+}
+
+@media only screen and (max-width:1050px){
+      .card{
+          margin: 5px;
+      }
+      .stars img{
+          width: 10px;
+      }
+      
+  }
+  
+  @media only screen and (max-width:650px){
+    .user-profile-container{
+        padding: 10px 20px;
+    }
+    .user-profile-container>nav>.icon{
+        display: block;
+        color: #E09F3E;
+        padding: 20px;
+    }
+    .user-profile-container>nav>.nav-logo{
+        padding: 20px;
+    }
+    .user-profile-container:first-child{
+       padding: 0  !important;
+    }
+    .hide-link-responsive{
+       display: none  !important;
+    }
+     .decrease-height-responsive{
+        height: 0vh  !important;
+      
+     }
+     
+     .user-profile-container>nav{
+         height: 30vh;
+     }
+
+    .user-profile-container>nav>.nav-links{
+        position: relative;
+        display: none;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all step-start 0.2s;
+
+    }
+    .prev img,.next img{
+        width: 35px;
+    }
+    .user-profile-container>nav>.nav-links >a>button{
+        margin-left: 0px;
+    }
+    .user-profile-container>nav>.nav-links >a{
+        margin-bottom: 20px;
+      
+     }
+ 
+  .edit-profile-card{
+      display: flex;
+      flex-direction: column;
+      height: 100%;   
+     
+  }
+ .edit-profile-card{
+     padding: 30px ;
+ }
+ .edit-profile-sub{
+     padding-left: 20px;
+ }
+  .user-profile-and-edit-section{
+      gap: 40px;
+      grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+     
+  }  
+  .user-profile-card-container{
+      margin-top: 50px;
+      height: 280px;
+      
+  }
+  .user-profile-card-cover{
+      height: 60%;
+  }
+  .user-profile-card-info{
+      height: 40%;
+  }
+
+  .user-profile-pic{
+      width: 120px;
+      height: 120px;
+      margin-top: -30px;
+  }
+  .user-details{
+      margin-top: 10px;
+  }
+  .user-details h1{
+      margin-bottom: 10px;
+  }
+  .my-trips-section{
+      padding: 20px;
+      margin-top: -10px;
+  }
+  .edit-profile-card >form >button{
+      margin-bottom: 15px;
+      width: 160px;
+  }
+
+  }
+
+  @media only screen and (max-width:375px){
+      .user-profile-card-container{
+          height: 300px;
+      }
+      .user-profile-pic{
+          height: 100px;
+          width: 100px;
+      }
+      .user-profile-card-container h1
+      {
+         font-size: 22px;
+      }
+      .edit-profile-card >form >button{
+          width: 150px;
+          height: 40px;
+        
+      }
+   
+  }
+  @media only screen and (max-width:320px){
+    .user-profile-card-container{
+        height: 320px;
+    }
+    .user-profile-pic{
+        margin-top: -30px;
+        width: 65%;
+    }
+    .user-profile-card-container h1
+    {
+       font-size: 20px;
+    }
+	.user-profile-container > nav > .nav-links > a > button {
+	width: auto;
+	padding: 0 20px;
+}
+}

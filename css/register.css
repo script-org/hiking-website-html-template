@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  
+
+*,html,body{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+}
+
+:root{
+    --gold: #e09f3e;
+    
+}
+
+
+::-webkit-input-placeholder{
+    color: #cccccc;
+    font-family: 'Lato',sans-serif ;
+
+}
+
+
+::-moz-placeholder{
+    color: #cccccc;
+    font-family: 'Lato',sans-serif ;
+
+}
+
+
+:-ms-input-placeholder{
+    color: #cccccc;
+    font-family: 'Lato',sans-serif ;
+
+}
+
+
+::placeholder{
+    color: #cccccc;
+    font-family: 'Lato',sans-serif ;
+
+}
+.register-container{
+    background:-webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/register_background.jpg) center/cover no-repeat;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/register_background.jpg) center/cover no-repeat;
+    
+   mix-blend-mode: normal;
+    width: 100%;
+   padding: 75px 390px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+
+    .backdrop-blur {
+        background :-webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+        background :linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+        -webkit-backdrop-filter: blur(81.5485px);
+      backdrop-filter: blur(81.5485px);
+      color: #cccccc !important ; 
+    }
+
+
+
+.register-container > .register-form-card{
+    width: 661px;
+    height: 100%;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background:-webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+}
+.register-container > .register-form-card>form>.heading{
+    font-family: 'Roboto',sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+.register-container > .register-form-card> form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 80px  65px 80px 65px;
+}
+
+.register-container > .register-form-card> form > label{
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 0.28px;
+}
+.register-container > .register-form-card> form > input{
+    border-radius: 4px;
+   font-family: 'Lato',sans-serif;
+   color: #cccccc;
+   padding: 15px;
+   font-size: 16px;
+   border: 1px solid #D8D8D8;
+   
+   margin-bottom: 20px;
+   letter-spacing: 0.28px;
+
+} 
+
+
+
+.register-container > .register-form-card> form > input:focus{
+    color: #cccccc;
+   outline: none;
+}
+
+.register-form-card> form >.form-button-with-text-link{
+    margin-top: 20px;
+}
+
+.register-form-card> form >.form-button-with-text-link button{
+    background: #E09F3E;
+    border-radius: 4px;
+    color: #ffffff;
+    width: 192px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.register-form-card> form >.form-button-with-text-link button:focus{
+   outline: none;
+  
+}
+.register-form-card> form >.form-button-with-text-link p{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+}
+
+.register-form-card> form >.form-button-with-text-link  p>span>a{
+    color: #E09F3E;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+	.register-container{
+		padding: 75px 10%;
+		height: 100%;
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+
+    .register-container > .register-form-card{
+        width: 80%;
+		}
+}
+
+@media only screen and (max-width:768px) {
+	  .register-container > .register-form-card{
+        width: 90%;
+		}
+}
+
+@media only screen and (max-width:576px) {
+    .register-container > .register-form-card{
+        width: 100%;
+    }
+    .register-form-card> form >.form-button-with-text-link button{
+		width: 100%;
+		margin: 30px 0;
+    }
+    .register-form-card> form >.form-button-with-text-link p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+		.register-container{
+		padding: 30px 10%;
+    }
+		    .register-container > .register-form-card> form{
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:400px) {
+
+}

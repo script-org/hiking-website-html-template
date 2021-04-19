@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Search</title>
+</head>
+<body>
+    <div class="search-container"><!--Container-->
+
+        <a href="javascript:void(0)" class="open-btn" onclick="sideNavOpen()"><i class="fa fa-search fa-2x"></i></a>
+        <a href="#"><button onclick="window.location.href='login.html'" class="login-register-button">Login/Register</button></a>
+       <!-------Left Pane Start------>
+        <div class="side-nav backdrop-blur">
+        <div class="backdropblur">
+            <div class="nav-logo">
+
+              <p>Logo</p>
+              <a href="javascript:void(0)" class="close-btn" onclick="sideNavClose()"><i class="fa fa-times fa-2x"></i></a>
+
+            </div>
+            <form action="#">
+               <input type="text" placeholder="&#xF002; &nbsp; Seach Location" id="search" name="search" class="search-icon backdrop-blur">
+               <input type="text" placeholder="People Participate" id="participants" name="participants" class="backdrop-blur">
+               <input type="text" placeholder="Route Difficulty" id="route-difficulty" name="route-difficulty" class="backdrop-blur">
+               <input type="text" placeholder="Days Spend" id="days-spend" name="days-spend" class="backdrop-blur">
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkbox" name="checkbox" checked class="checkbox">
+                <label for="checkbox">Include mountain expert</label>
+            </div>
+            <div class="range-slide-container">
+                <p>Budget</p>
+                <p class="slider-value">$ 0 -$ 200</p>
+                
+                <div class="multi-range">
+                    <input class="range" type="range" min="0" max="200" value="0" step="1" id="lower" onchange="renderValue()">
+                      <span id="range-color" class="range-color"></span>
+                    <input class="range" type="range" min="0" max="200" value="200" step="1" id="upper" onchange="renderValue()">
+                </div>
+                
+            </div>
+             <button class="search-button">Search</button>
+        <div><!---card start-->
+          
+       
+      </div><!--card carousel end-->
+            </form>
+			 <div class="s-result" >
+			 
+            <div class="card backdrop-blur" onclick="window.location.href='book.html'">
+                <div class="card-photo">
+                    <img src="./images/slider1_placeholder.jpg" alt="Onami Ike Crater Lake">
+                </div>
+                <div class="card-description">
+                    <h1>Onami Ike Crater Lake</h1>
+                   <p class="description">Kirishima-Kinkowan National Park</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+
+             </div>
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider2_placeholder.jpg" alt="Turkey Creek Trail">
+                </div>
+                <div class="card-description">
+                    <h1>Turkey Creek Trail</h1>
+
+                   <p class="description">The Turkey Creek Trail </p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+                
+             </div>
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider2_placeholder.jpg" alt="Turkey Creek Trail">
+                </div>
+                <div class="card-description">
+                    <h1>Turkey Creek Trail</h1>
+
+                   <p class="description">The Turkey Creek Trail </p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+                
+             </div>
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider3_placeholder.jpg" alt="Top of the World Loop">
+                </div>
+                <div class="card-description">
+                    <h1>Top of the World Loop</h1>
+
+                   <p class="description">A nice loop hike from the Top</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+             </div>
+        </div><!--carnd end-->
+		 <p class="hiking-routes">Hiking Routes(3)</p>
+        </div><!---Left Pane End--->
+        </div>
+     
+	 <div class="map_area">
+		        <div class="map">
+            <img src="./images/map.jpg" alt="Map">
+        </div>
+
+        <!----Coordinates Input Start-->
+        <div class="coordinates-input backdrop-blur">
+            <form action="#"> 
+			   <div class="input-group">
+                   <label for="latitude">Latitude</label>
+                   <input type="text" name="latitude" id="latitude" placeholder="Latitude" class="backdrop-blur" >
+               </div>
+               <div class="input-group">
+                   <label for="longitude">Longitude</label>
+                   <input type="text" placeholder="Longitude" id="longitude" name="longitude" class="backdrop-blur">
+               </div>
+               <div class="input-group">
+                <label for="elevation">Elevation</label>
+                <input type="text" placeholder="Elevation" id="elevation" name="elevation" class="backdrop-blur">
+            </div>
+            </form>
+        </div>
+        <!----Coordinate Input End-->
+	 </div>
+
+
+</div><!---Container End-->
+
+<script src="./js/search.js"></script>
+
+</body>
+</html>

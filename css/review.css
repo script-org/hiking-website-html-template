@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  
+
+
+
+*,html,body{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+}
+
+:root{
+    --gold: #e09f3e;
+    
+}
+
+    .backdrop-blur {
+        background :-webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), rgba(255, 255, 255, 0.0001);
+        background :linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)), rgba(255, 255, 255, 0.0001);
+        -webkit-backdrop-filter: blur(81.5485px);
+      backdrop-filter: blur(81.5485px);
+      color:#cccccc  !important;
+    }
+
+  .review-container{
+    background:-webkit-linear-gradient(rgba(39, 39, 39, 0.4),rgba(0,0,0,0.4)), url(../images/review_background.jpg) center/cover no-repeat;
+    background:linear-gradient(rgba(39, 39, 39, 0.4),rgba(0,0,0,0.4)), url(../images/review_background.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+  }
+
+  .review-container p{
+      font-size: 14px;
+      font-family: 'Lato',sans-serif;
+      color: white;
+      font-weight: normal;
+  }
+
+
+
+  .review-container > nav{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: white;
+
+      margin-bottom: 45px;
+  }
+
+
+  .review-container > nav > .nav-links > a {
+      color: #ffffff;
+      margin-right: 30px;
+
+      text-decoration: none;
+      font-family: 'Lato',sans-serif;
+      font-size: 16px;
+  }
+  .review-container > nav > .nav-links > a > button{
+       background: #E09F3E;
+       width: 192px;
+       height: 50px;
+       font-size: 18px;
+       font-family: 'Lato',sans-serif;
+       color: white;
+       border-radius: 4px;
+       border: none;
+       cursor: pointer;
+       outline: none;
+    }
+    .review-container > nav > .nav-links > a > button:focus{
+        outline: none;
+    }
+  .review-container>nav>.icon{
+      color: #E09F3E;
+      display: none;
+      float: right;
+      margin-right: 15px;
+     
+  }  
+
+  .review-container>.upload-photo{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+
+   
+  }
+  .upload-photo-card h1,.upload-photo label{
+      font-family: 'Roboto',sans-serif;
+      color: white;
+      font-weight: normal;
+      
+    }
+    .upload-photo-card h1{
+        margin-bottom: 40px;
+    }
+ 
+   .upload-area{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+   }  
+.upload-area img {
+	margin-right: 15px;
+	background-color: rgba(77,85,74,.6);
+}
+  
+   .upload-area img:hover{
+      cursor: pointer;
+   }
+   .upload-area> .social-icons{
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       
+   }
+
+   .upload-area> .social-icons >a{
+       cursor: pointer;
+      
+   }
+  
+
+  .review-container>.upload-photo>.upload-photo-card{
+    width: 660px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+  }
+
+  .review-container>.upload-photo>.upload-photo-card{
+      padding: 75px 60px;
+  }
+
+  .review-description{
+      margin-top: 50px;
+  }
+  .review-description textarea{
+      width: 100%;
+      height: 120px;
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 14px;
+  }
+
+  .stars{
+    margin: 50px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+
+  .stars p{
+      margin-right: 10px;
+  }
+  .stars img{
+      margin-right: 10px;
+  }
+
+
+  .stars img:hover{
+      cursor: pointer;
+  }
+ 
+  .upload-photo form > button{
+       background: #E09F3E;
+       width: 230px;
+       height: 50px;
+       font-size: 18px;
+       font-family: 'Lato',sans-serif;
+       color: white;
+       border-radius: 4px;
+       border: none;
+       cursor: pointer;
+       outline: none;
+  }
+  .upload-photo form > button:focus{
+      outline: none !important;
+   
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width:1200px){
+	  
+  }
+
+  @media only screen and (max-width:1024px){
+	  
+  }
+  @media only screen and (max-width:991px){
+	  
+  }
+  @media only screen and (max-width:768px){
+    .review-container{
+        height: 100%;
+        background:-webkit-linear-gradient(rgba(39, 39, 39, 0.4),rgba(0,0,0,0.4)), url(../images/review_background.jpg) left/cover no-repeat;
+        background:linear-gradient(rgba(39, 39, 39, 0.4),rgba(0,0,0,0.4)), url(../images/review_background.jpg) left/cover no-repeat;
+        padding-top: 20px;
+       
+    }
+    .review-container>.upload-photo>.upload-photo-card{
+        width: 80%;
+    }
+	
+	.upload-area {
+		display: block;
+		text-align: center;
+	}
+	 .upload-area > .social-icons {
+		display: block;
+	}
+    .upload-area >img{
+      
+        margin-bottom: 20px;
+    }
+	.upload-photo-card h1 {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+  }
+
+  @media only screen and (max-width:767px){
+	  
+  }
+  
+  @media only screen and (max-width:650px) {
+    .review-container>nav{
+        width: 100%;
+    }
+    .review-container>nav>.icon{
+        display: block;
+ 
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .review-container>nav>.nav-logo{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .review-container:first-child{
+        padding-left: 0  !important;
+        padding-right: 0  !important;
+    }
+    .hide-link-responsive{
+       display: none  !important;
+    }
+     .decrease-height-responsive{
+        height: 0vh  !important;
+        -webkit-transition: all step-start 0.2s;
+        transition: all step-start 0.2s;
+      
+     }
+     .review-container>nav{
+         height: 30vh;
+     }
+
+    .review-container>nav>.nav-links{
+        position: relative;
+        display: none;
+        top: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+       width: 100%;
+    }
+    .review-container>nav>.nav-links >a{
+        margin-bottom: 20px;
+        margin-right: 0;
+     }
+ 
+    .review-container>.upload-photo>.upload-photo-card{
+        width: 90%;
+        margin: 50px 0 ;
+        
+        
+    }
+  
+  
+}
+
+  @media only screen and (max-width:575px){
+	  
+  }
+
+  @media only screen and (max-width:480px){
+	  
+  }
+
+  @media only screen and (max-width:400px){
+	  .upload-photo form > button {
+	width: 100%;
+}
+  }
+  
+
+@media only screen and (max-width:375px){
+    .review-container>.upload-photo>.upload-photo-card{
+       padding: 50px 30px;
+        
+    }
+
+    .review-container>nav>.nav-links> a >button{
+        width: 180px;
+    }
+	.upload-area > img {
+		width: 100%;
+	}
+	.upload-photo-card h1 {
+	font-size: 20px;
+}
+}
+
+@media only screen and (max-width:320px){
+    .upload-area >img{
+        width: 190px;
+    }
+}

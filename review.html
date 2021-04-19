@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <title>Review</title>
+</head>
+<body>
+  <div class="review-container">
+     <nav class="decrease-height-responsive">
+    <div class="nav-logo">
+        <a>Logo</a>
+    </div>
+    <div class="nav-links">
+          <a href="#" class="hide-link-responsive">Edit Profile</a>
+          <a href="#" class="hide-link-responsive">Review a Hike</a>
+          <a href="#" class="hide-link-responsive"><button>Login/Register</button></a>
+          
+
+       </div>
+       <a href="javascript:void(0);" class="icon " onclick="menuToggle()" title="Menu">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+     </nav>
+     <div class="upload-photo">
+         <div class="upload-photo-card backdrop-blur">
+             <h1>Upload Photos</h1>
+             <form action="#">
+             <div class="upload-area">
+               <img src="./images/review_photoplaceholder.svg"  alt="Photo Upload placeholder">
+               <img src="./images/review_photoplaceholder.svg"  alt="Photo Upload placeholder">
+               <div class="social-icons">
+               <a href="#"><img src="./images/facebook_icon.svg" alt="Facebook Icon" ></a>
+               <a href="#"><img src="./images/instagram_icon.svg" alt="Instagram Icon" ></a>
+
+              </div>    
+             </div>
+             <div class="review-description">
+                  <h1>Mountain Expert</h1>
+                  <label>Full Description</label>
+                  <textarea class="backdrop-blur" placeholder="Write description here..."></textarea>
+                  <div class="stars">
+                      <p>Rank</p>
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                      <img src="./images/star_white.svg" alt="White Star">
+                  </div>
+
+             </div>
+             <button type="submit">Add Review</button>
+            </form>
+         </div>
+     </div>
+  </div>
+
+  <script src="./js/review.js"></script>
+</body>
+</html>

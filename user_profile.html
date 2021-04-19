@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>User Profile</title>
+
+   <link rel="stylesheet" href="./css/user_profile.css">
+</head>
+<body>
+<div class="user-profile-container"><!---container start-->
+    <nav class="decrease-height-responsive"><!---Nav bar start-->
+        <a href="#" class="nav-logo">Logo</a>
+    
+       <div class="nav-links">
+           <a href="#"class="hide-link-responsive" >Review a Hike</a>
+           <a href="#" class="hide-link-responsive"><button>Login/Register</button></a>
+       </div>
+       <a href="javascript:void(0);" class="icon" onclick="menuToggle()" title="Menu">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+    </nav><!--nav bar end-->
+
+    <div class="user-profile-and-edit-section"><!--edit and user profile start-->
+
+           <div class="user-profile-card-container"><!--user profile card-->
+               <div class="user-profile-card-cover">
+
+               </div>
+               <div class="user-profile-card-info"> 
+                     <div class="user-profile-pic">
+                      
+                     </div>
+                    <div class="user-details">
+                        <h1 >Brandon H. Brown</h1>
+                        <p >Westcam Court, United States</p>
+                    </div>
+                </div>
+          </div><!----user profile card end-->
+
+
+          <div class="edit-profile-card-wrapper"><!---edit start-->
+            <p class="edit-profile-sub">Edit Profile</p>  
+           <div class="edit-profile-card backdrop-blur">
+               <form action="#" class="user-info-form">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="full-name"  id="full-name" placeholder="Full Name"  class="backdrop-blur">
+                   <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email"  class="backdrop-blur">
+                  <label for="phone-num">Phone Number</label>
+                  <input type="tel" name="phone-num" id="phone-num" placeholder="Phone Number"  class="backdrop-blur">
+                
+                  <button type="submit">Change</button>
+
+               </form class>
+
+               <form action="#" class="user-interest-form"> 
+                <label for="interest">Interests</label>
+                <input type="text" name="interest"  id="interest" placeholder="Interest"  class="backdrop-blur">
+                <input type="text" name="interest"  id="interest" placeholder="Interest"  class="backdrop-blur">
+                <input type="text" name="interest"  id="interest" placeholder="Interest"  class="backdrop-blur">
+
+                <button type="submit">Change</button>
+            </form>
+           </div>
+          </div> <!--edit end-->
+
+       </div><!--edit and user profile end-->
+
+
+  <div class="my-trips-section"><!--- my trips start-->
+      <div class="heading-and-controls">
+              <h1>My Trips</h1>
+              <div class="slider-controls" >
+                  <a class="prev" ><img src='./images/arrow_left_icon.svg' alt='Arrow Left' ></a>
+                  <a  class="next" ><img src='./images/arrow_right_icon.svg' alt='Arrow Right'></a>
+
+              </div>
+      </div> 
+      
+      <div class="slick-carousel"><!---card carousel start-->
+        <!-- Inside the containing div, add one div for each slide -->
+
+
+        <div><!---card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider1_placeholder.jpg" alt="Onami Ike Crater Lake">
+                </div>
+                <div class="card-description">
+                    <h1>Onami Ike Crater Lake</h1>
+                   <p class="description">Kirishima-Kinkowan National Park</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+
+             </div>
+        </div><!---card end-->
+
+        <div><!---card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider2_placeholder.jpg" alt="Turkey Creek Trail">
+                </div>
+                <div class="card-description">
+                    <h1>Turkey Creek Trail</h1>
+
+                   <p class="description">The Turkey Creek Trail </p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+                
+             </div>
+        </div><!--card end-->
+
+
+        <div><!--card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider3_placeholder.jpg" alt="Top of the World Loop">
+                </div>
+                <div class="card-description">
+                    <h1>Top of the World Loop</h1>
+
+                   <p class="description">A nice loop hike from the Top</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+             </div>
+        </div><!--carnd end-->
+
+        <div><!---card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider4_placeholder.jpg" alt="Onami Ike Crater Lake">
+                </div>
+                <div class="card-description">
+                    <h1>Pawnee-Buchanan</h1>
+
+                   <p class="description">Peaks Wilderness Permit</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+             </div>
+        </div><!--card end-->
+
+
+
+        <div><!--card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider5_placeholder.jpg" alt="Pawnee-Buchanan">
+                </div>
+                <div class="card-description">
+                    <h1>Top of the World Loop</h1>
+
+                   <p class="description">A nice loop hike from the Top</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                </div>
+
+             </div>
+        </div><!--card end-->
+
+
+        <div><!--card start-->
+            <div class="card backdrop-blur">
+                <div class="card-photo">
+                    <img src="./images/slider5_placeholder.jpg" alt="Top of the World Loop">
+                    
+                </div>
+                <div class="card-description">
+                    <h1>Top of the World Loop</h1>
+
+                   <p class="description">A nice loop hike from the Top</p>
+                   <div class="additional-desc">
+                       <p class="length">Length: 9.0 km</p>
+                     <p class="time">Est. 3h 58m</p>
+                   </div>
+                   <div class="rating-level">
+                    <div class="stars" >
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+                      <img src="./images/star_yellow.svg" alt="Yellow Star">
+
+                    </div>
+                    <p>5{30)</p>
+                    <p class="intermediate-tag">Intermediate</p>
+                </div>
+                   
+
+                </div>
+             </div>
+        </div><!---card end-->
+       
+      </div><!--card carousel end-->
+          
+   </div><!----my trips end-->
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script  src="./js/slick.min.js"></script>
+ <script src="./js/user_profile.js"></script>
+</body>
+</html>

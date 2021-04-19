@@ -1,0 +1,22 @@
+<svg width="226" height="156" viewBox="0 0 226 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b)">
+<rect width="226" height="156" rx="4" fill="#EEEEEE" fill-opacity="0.01"/>
+<rect width="226" height="156" rx="4" fill="white" fill-opacity="0.15"/>
+</g>
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M122 68.728H99.5C98.2574 68.728 97.25 69.7354 97.25 70.978V88.978C97.25 90.2207 98.2574 91.228 99.5 91.228H122C123.243 91.228 124.25 90.2207 124.25 88.978V70.978C124.25 69.7354 123.243 68.728 122 68.728ZM99.5 66.478C97.0147 66.478 95 68.4927 95 70.978V88.978C95 91.4633 97.0147 93.478 99.5 93.478H122C124.485 93.478 126.5 91.4633 126.5 88.978V70.978C126.5 68.4927 124.485 66.478 122 66.478H99.5Z" fill="#EEEEEE"/>
+<path d="M118.953 79.1822C119.296 78.8406 119.818 78.7565 120.251 78.9732L124.249 83.3542V91.2282H97.249V88.9782L103.203 83.6822C103.582 83.3045 104.174 83.246 104.62 83.5422L110.605 87.5312L118.953 79.1832V79.1822Z" fill="#EEEEEE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.125 79.978C106.989 79.978 108.5 78.467 108.5 76.603C108.5 74.7391 106.989 73.228 105.125 73.228C103.261 73.228 101.75 74.7391 101.75 76.603C101.75 78.467 103.261 79.978 105.125 79.978ZM103.995 64.228H126.495C127.738 64.228 128.745 65.2354 128.745 66.478V84.478C128.745 85.7207 127.738 86.728 126.495 86.728V88.978C128.98 88.978 130.995 86.9633 130.995 84.478V66.478C130.995 63.9927 128.98 61.978 126.495 61.978H103.995C101.51 61.978 99.4951 63.9927 99.4951 66.478H101.745C101.745 65.2354 102.752 64.228 103.995 64.228Z" fill="#EEEEEE"/>
+</g>
+<defs>
+<filter id="filter0_b" x="-81.5485" y="-81.5485" width="389.097" height="319.097" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="40.7742"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<clipPath id="clip0">
+<rect width="35.995" height="31.5" fill="white" transform="translate(95 61.978)"/>
+</clipPath>
+</defs>
+</svg>

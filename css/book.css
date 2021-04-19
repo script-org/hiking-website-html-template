@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  
+
+
+*,html,body{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+}
+
+
+:root{
+    --gold: #e09f3e;
+    
+}
+
+
+    .backdrop-blur {
+        background :-webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+        background :linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(255, 255, 255, 0.0001);
+        -webkit-backdrop-filter: blur(81.5485px);
+      backdrop-filter: blur(81.5485px);
+      
+    }
+
+
+.suggested-hikes,.other-hiking-tours{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.heading-and-controls{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+}
+.heading-and-controls h1{
+    font-family: 'Roboto',sans-serif;
+    color: #ffffff;
+   font-size: 24px;
+   font-weight: normal;
+}
+
+.slider-controls img{
+    margin-left: 15px;
+}
+
+.booking-container{
+    background:-webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/booking_background.jpg) top/cover;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/booking_background.jpg) top/cover;
+    
+    width: 100%; 
+    padding:  0 50px 120px 50px;
+    
+}
+
+.booking-container > nav{
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 35px;
+}
+.booking-container a{
+    font-size: 16px;
+    color: white;
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+}
+
+.booking-container>nav>.icon{
+    color: #E09F3E;
+    display: none;
+    float: right;
+    margin-right: 15px;
+   
+}  
+
+.booking-container >nav>.nav-links >a>button,.book-button{
+    background: #E09F3E;
+    -webkit-transition: all step-start 0.2s;
+    transition: all step-start 0.2s;
+    width: 192px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-family: 'Lato',sans-serif;
+    border: none;
+}
+.margin-left-thirty{
+    margin-left: 30px;
+}
+
+
+.booking-container >nav>.nav-links >a>button:focus,.book-button:focus{
+    outline: none;
+}
+
+.slick-carousel-1,.slick-carousel-2 {
+    margin: 0 -10px;
+  }
+
+.card{
+    height: 320px;
+    border: 1px solid #EEEEEE;
+    margin: 0 10px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+}
+.card img {
+ 
+  width: 100%;
+}
+.card-photo{
+    position: relative;
+    
+  
+}
+.card>.card-description{
+   padding: 20px 10px;
+   
+ 
+}
+
+.mountain-expert-tag{
+ 
+  width: 150px !important; 
+  position: absolute;
+  left:-9px;
+  bottom: -30px;
+}
+.card >.card-description >h1{
+  color: #FFFFFF;
+  margin: 8px 0;
+  font-family: 'Roboto',sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.card >.card-description >p{
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 8px 0;
+  font-family: 'Lato',sans-serif;
+}
+
+.card >.card-description>.additional-desc{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #cccccc;
+  font-size: 14px;
+  font-family: 'Lato',sans-serif;
+  display: flex;
+  margin: 8px 0;
+
+  }
+ .card >.card-description>.additional-desc>.length{
+     margin-right: 15px;
+ } 
+  .prev-1,.next-1,.prev-2,.next-2{
+      cursor: pointer;
+  }
+  .rating-level{
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: 'Lato',sans-serif;
+      font-size: 13px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: #ffffff;
+	  padding-top: 15%;
+  }
+  .stars{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  .stars img{
+      width: 15px;
+  }
+
+  .rating-level .intermediate-tag{
+      background:  #F66262;
+      width: 80px;
+      padding: 3px;
+      border-radius: 2px;
+  }
+  .rating-level .difficult-tag{
+    background:#4A4848;
+    width: 52px;
+    padding: 3px;
+    border-radius: 2px;
+  }
+  hr{
+      border-top: 1px solid #ffffff;
+      width: 80%;
+      position: center;
+      margin: 50px 0;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+  }
+
+  .extra-photos{
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (minmax(240px,1fr))[auto-fit];
+          grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+     
+    }
+
+    .extra-photos img{
+        width: 240px;
+        border: 1px solid #EEEEEE;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .promotional-paragraphs{
+        
+        margin-top: 40px !important;
+        color: #ffffff;
+        font-family: 'Lato',sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        width: 60%;
+     
+        margin: 0 auto;
+    }
+    .centered-button{
+        
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      margin: 10px 0;
+      -webkit-transform: translate(-50%,50%);
+              transform: translate(-50%,50%);
+
+    }
+
+	
+	
+	
+	
+	
+	
+	    @media only screen and (max-width:1200px){
+        .card {
+	height: auto;
+}
+    }
+	
+	@media only screen and (max-width:1024px){
+     
+        .card{
+            margin: 5px;
+        }
+        .stars img{
+            width: 10px;
+        }
+        .extra-photos{
+           
+            -ms-grid-columns: (minmax(300px,1fr))[auto-fit];
+           
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+           gap: 10px;
+          }
+        .extra-photos img{
+            width: 300px;
+        }
+        
+    }
+	
+	@media only screen and (max-width:991px){
+     
+
+        
+    }
+	@media only screen and (max-width:768px){
+     .stars img{
+            width: 16px;
+        }
+         .booking-container{
+            padding-bottom: 120px !important;
+            
+             
+         }
+        
+        .booking-container>nav>.icon{
+            display: block;
+            
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+        .booking-container>nav>.nav-logo{
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .booking-container:first-child{
+           padding-left: 0  !important;
+           padding-right: 0  !important;
+        }
+        .hide-link-responsive{
+           display: none  !important;
+        }
+         .decrease-height-responsive{
+            height: 0vh  !important;
+            -webkit-transition: all step-start 0.2s;
+            transition: all step-start 0.2s;
+          
+         }
+         
+         .booking-container>nav{
+             height: 25vh;
+         }
+    
+        .booking-container>nav>.nav-links{
+            position: relative;
+            display: none;
+            top: 80px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            text-align: center;
+           
+        }
+        .booking-container>nav>.nav-links>a{
+            margin-bottom: 15px;
+            margin-left: 0px;
+            
+        }
+        .prev-2 img,.prev-1 img,.next-2 img,.next-1 img{
+            width: 35px;
+        }
+         .heading-and-controls h1{
+             font-size: 21px;
+         }
+        .suggested-hikes{
+            margin-top: 80px;
+           
+        }
+        .other-hiking-tours{
+            padding: 0px 20px;
+        }
+   
+        .extra-photos{
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: (minmax(100%,1fr))[auto-fit];
+                grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+           
+          }
+          .promotional-paragraphs{
+              width: 90%;
+          }
+          .suggested-hikes{
+              margin: 80px 20px 0px 20px;
+          }
+          .extra-photos{
+              padding: 0 20px;
+          }
+		.extra-photos img {
+			width: 60%;
+			margin-bottom: 20px;
+			margin: auto;
+		}
+        
+    }
+	@media only screen and (max-width:575px){
+	.extra-photos img {
+			width: 100%;
+		}
+        
+    }
